@@ -310,6 +310,7 @@ const IScrollViewGesture: React.FC<Props> = (props) => {
     <PanGestureHandler
       {...panGestureHandlerProps}
       enabled={enabled}
+      activeOffsetX={[-10, 10]}
       onGestureEvent={panGestureEventHandler}
     >
       <Animated.View
